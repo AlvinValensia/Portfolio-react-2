@@ -1,0 +1,181 @@
+/** @format */
+:root {
+  /* --background-image: linear-gradient(
+    120deg,
+    hsl(169, 100%, 35%, 0.5) rgba(1, 84, 69, 0.67)
+  ); */
+
+  --background-overlay: rgba(255, 255, 255, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Menu Button */
+
+.menu-btn {
+  position: absolute;
+  right: 80px;
+  margin-top: 50px;
+  z-index: 999999;
+}
+
+.menu-btn button {
+  background-color: transparent;
+  font-size: 36px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header */
+
+.header {
+  position: absolute;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  width: 200px;
+  transition: all 0.5s ease-in-out;
+}
+
+.header.open {
+  height: 100vh;
+  background-color: var(--background-overlay);
+}
+
+.header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header nav ul li {
+  margin: 20px 0;
+}
+
+/* Homepage */
+
+.homepages {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./homepage-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.homepages .overlay {
+  background-image: var(--background-image);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.homepages .overlay h1 {
+  text-transform: uppercase;
+  font-size: 92px;
+}
+
+.homepages .overlay p {
+  font-size: 34px;
+}
+
+.homepages .overlay ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.homepages .overlay ul li {
+  margin: 0 20px;
+}
+
+.homepages .overlay ul li a {
+  font-size: 46px;
+}
+
+/* Contacts */
+
+.contacts {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+}
+
+.contacts h1 {
+  padding: 50px 80px;
+  color: #fff;
+}
+
+.contacts ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contacts ul li {
+  margin: 10px 0;
+}
+
+.contacts ul li a {
+  font-size: 30px;
+}
+
+@media (max-width: 992px) {
+  .homepages .overlay h1 {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-btn {
+    right: 30px;
+  }
+
+  .homepages .overlay h1 {
+    font-size: 30px;
+  }
+
+  .homepages .overlay p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .homepages .overlay ul li a {
+    font-size: 24px;
+  }
+
+  .contacts ul li a {
+    font-size: 18px;
+  }
+}
