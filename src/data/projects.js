@@ -1,4 +1,4 @@
-import {v4 as uuidv4} from "uuidv4";
+import {v4 as uuidv4} from "uuid";
 
 export const projects = [
     {
@@ -7,7 +7,7 @@ export const projects = [
         desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         github: "https://github.com/AlvinValensia",
         demo: "https://tsbsankara.co.ke",
-        image: "./images/project-1.jpg",
+        image: "https://github.com/AlvinValensia/Portfolio-React-2/blob/main/public/images/project-1.jpg?raw=true",
     },
     {
         id: uuidv4(),

@@ -24,7 +24,7 @@ img {
 
 body {
   font-family: "Manrope", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 a {
